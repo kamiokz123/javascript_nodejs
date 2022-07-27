@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let post= {};
+
+post.userid= 1;
+post.username= "kamran123";
+post.userprofile= "https://web.facebook.com/kamranhaider.orakzai";
+post.post= "love those who deserve it";
+post.type= "public";
+post.likes=[{
+
+    "userid":12,
+    "username":"hadi hussain",
+    "userprofile":"https://web.facebook.com/hadi.hussain.7330",
+    "liketype":":)"
+},{
+    "userid":13,
+    "username":"mehdi abbas",
+    "userprofile":"https://web.facebook.com/mehdi.abbas.37266136",
+    "liketype":":)"
+}
+];
+post.comments=[{
+    "userid":12,
+    "username":"hadi hussain",
+    "userprofile":"https://web.facebook.com/hadi.hussain.7330",
+    "commenttype":"nice"
+
+},{
+    "userid":13,
+    "username":"mehdi abbas",
+    "userprofile":"https://web.facebook.com/mehdi.abbas.37266136",
+    "commenttype":"very good"
+
+}]
+
+document.write(JSON.stringify(post )) ;
+document.write(JSON.stringify(post.post )) ;
+document.write("\n your post got "+ post.likes.length+ " likes");
+
+    </script>
+</body>
+</html>
