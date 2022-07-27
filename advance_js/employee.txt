@@ -1,0 +1,110 @@
+var employees=[
+    {
+        id:251,
+        f_name:"kami",
+        l_name:"haider",
+        salary:20000
+    },
+    {
+        id:252,
+        f_name:"hadi",
+        l_name:"hussain",
+        salary:25000
+    },
+    {
+        id:253,
+        f_name:"mehdi",
+        l_name:"abbas",
+        salary:30000
+    }
+
+]
+
+
+class employee{
+    constructor(id,f_name,l_name,salary){
+        this.i=id
+        this.f=f_name
+        // this.l=l_name
+        // this.s=salary
+
+    }
+
+    getid(){
+        employees.forEach(a => {
+            if (a.f_name== this.f) {
+                console.log(a.f_name+" has id no: "+ a.id );
+                
+            }
+            
+        });
+         
+    }
+    getf_name(){
+        employees.forEach(a=>{
+            if (a.id== this.i) {
+                console.log("id no: "+a.id+" has first name: "+a.f_name);
+                
+            }
+        })
+    }
+
+    getl_name(){
+        employees.forEach(a => {
+            if (a.id==this.i) {
+                console.log("id no: "+a.id+" has last name: "+a.l_name);
+                
+            }
+            
+        });
+    }
+    getfullname(){
+     employees.forEach(a => {
+         if (a.id==this.i) {
+             console.log("id no: "+a.id+" has full name: "+a.f_name+" "+a.l_name);
+             
+         }
+         
+     });
+
+    }
+
+
+    getsalary(){
+        employees.forEach(a => {
+            if (a.id==this.i) {
+                console.log("id no: "+a.id+" has per month salary: "+a.salary);
+                
+            }
+            
+        });
+
+    }
+    anualsalary(){
+        employees.forEach(a => {
+            if (a.id==this.i) {
+                console.log("id no: "+a.id+" has anual salary : "+a.salary*12);
+                
+            }
+            
+        });
+    }
+    setbonus(){
+        employees.forEach(a => {
+            if (a.id==this.i) {
+                var m=a.salary+a.salary*20/100;
+                console.log("salary with 20% bonus is: "+m);
+                
+            }
+            
+        });
+    }
+}
+ var v= new employee(251)
+ v.getid()
+ v.getf_name() 
+ v.getl_name()
+ v.getfullname()
+ v.getsalary()
+ v.anualsalary()
+ v.setbonus()
